@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Newsletter</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f4e4bc;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border: 2px solid #8b4513;
+        }
+        h1 {
+            text-align: center;
+            color: #8b4513;
+            font-size: 48px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #8b4513;
+            padding-bottom: 10px;
+        }
+        .article {
+            margin-bottom: 30px;
+        }
+        .article h2 {
+            color: #8b4513;
+            font-size: 24px;
+        }
+        .article p {
+            line-height: 1.6;
+            color: #333;
+        }
+        .date {
+            font-style: italic;
+            color: #666;
+        }
+
+        .social-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-link {
+    margin: 0 10px;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #8b4513;
+    color: #666;
+}
+    </style>
+<script>
+    function updateDateTime() {
+        const now = new Date();
+        document.getElementById('updateTime').textContent = now.toLocaleString();
+    }
+    updateDateTime();
+</script>
+</head>
+<body>
+    <div class="container">
+        <h1>New Day, New Me</h1>
+        <div class="article">
+            <h2>Local News</h2>
+            <p class="date">August 15, 1923</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+        <div class="article">
+            <h2>World Events</h2>
+            <p class="date">August 15, 1923</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+        </div>
+        <div class="article">
+            <h2>Society Pages</h2>
+            <p class="date">August 15, 1923</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+        </div>
+    </div>
+    
+    <div class="date">Last Updated: <span id="updateTime"></span></div>
+<h2>New Day, New Me</h2>
+<p>Stay informed with our latest updates and news.</p>
+
+<div class="social-media">
+    <a href="#" class="social-link"><img src="facebook-icon.png" alt="Facebook"></a>
+    <a href="#" class="social-link"><img src="twitter-icon.png" alt="Twitter"></a>
+    <a href="#" class="social-link"><img src="instagram-icon.png" alt="Instagram"></a>
+</div>
+
+<footer>
+    <p>© 2024 New Day, New Me Newsletter. All rights reserved.</p>
+</footer>
+</body>
+</html>
